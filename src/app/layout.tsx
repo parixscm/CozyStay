@@ -1,3 +1,4 @@
+import { Navbar } from "@/components";
 import "./globals.css";
 import { Gowun_Dodum } from "next/font/google";
 
@@ -15,7 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={gowun_dodum.className}>{children}</body>
+      <body className={gowun_dodum.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
