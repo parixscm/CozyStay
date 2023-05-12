@@ -7,11 +7,12 @@ function Logo() {
 
   return (
     <Image
-      width={150}
-      height={100}
-      src="/images/logo.webp"
+      priority
       alt="logo"
-      className="hidden cursor-pointer md:block"
+      width={200}
+      height={74}
+      src="/images/logo.png"
+      className="hidden h-auto cursor-pointer md:block"
     />
   );
 }
